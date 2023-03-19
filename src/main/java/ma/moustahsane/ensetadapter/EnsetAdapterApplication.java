@@ -19,7 +19,7 @@ public class EnsetAdapterApplication implements   Runnable {
 
         ApplicationContext context = new  AnnotationConfigApplicationContext("ma.moustahsane.ensetadapter","ma.moustahsane.ensetadapter.impls","ma.moustahsane.ensetadapter.adapter");
         CentralUnit centralUnit = (CentralUnit) context.getBean("CU");
-        IVGA ivga = (IVGA) context.getBean("TV");
+        IVGA ivga = (IVGA) context.getBean("VgaToHdmi");
         IUSB iusb = (IUSB) context.getBean("mouse");
 
         centralUnit.setVGA(ivga);
